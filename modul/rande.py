@@ -15,6 +15,6 @@ class rand:
                      for b in range(0, len(self.find), 4)]
         for y in self.data:
             rand.co+=1
-            self.filer.write('-->'+y['ip']+':'+y['port']+'\n')
-            print rand.co, ':'+'-->'+y['ip']+':'+y['port']
+            self.filer.write(y['ip']+':'+y['port']+'\n')
+            print rand.co, ': '+y['ip']+':'+y['port']
         self.filer.close()
