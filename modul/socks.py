@@ -14,7 +14,7 @@ class sok:
                               self.regx[i:i+4])) \
                      for i in range(0, len(self.regx), 4)]
         for c in self.data:
-            self.filer.write('-->'+c['ip']+':'+c['port']+'\n')
+            self.filer.write(c['ip']+':'+c['port']+'\n')
             sok.co+=1
-            print sok.co, ':'+'--> '+c['ip']+':'+c['port']
+            print sok.co, ': '+c['ip']+':'+c['port']
         self.filer.close()
